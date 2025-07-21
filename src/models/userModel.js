@@ -1,48 +1,54 @@
 const {conn, mongoose} = require('../middleware/connection')
 // const validator = require('validator')
 var userSchema = mongoose.Schema({
-    firstName : {
+    firstname : {
         type : String,
-        required : [true,'Please enter name']
-    },
-    lastname : {
-        type : String,
-        required : [true,'Please enter last name']
+        required : [false,'Please enter name']
     },
     dob :{
         type : Date,
-        required : [true,'Please enter date of birth']
+        required : [false,'Please enter date of birth']
     },
-    mobileNumber : {
-        type : Number,
-        required : [true,'Please enter mobile number'],
-        unique : true
+    phone : {
+        type : String,
+        required : [false,'Please enter mobile number'],
+        unique : false
     },
     countryCode : {
-        type : Number,
-        required : [true,'Please enter country code']
+        type : String,
+        default : "91",
+        required : [false,'Please enter country code']
     },
     state : {
         type : String,
-        required : [true,'Please enter state'],
+        required : [false,'Please enter state'],
     },
-    emailId :{
+    city :{
         type : String,
-        required : [true,'Please enter email id'],
-        unique :[true,"This Emial is already register with us."],
+        required : [false,'Please enter city']
     },
-    zipCode :{
-        type : Number,
-        required : [true,'Please enter email id'],
+    email :{
+        type : String,
+        required : [false,'Please enter email id'],
+        unique :[false,"This Emial is already register with us."],
+    },
+    zip :{
+        type : String,
+        required : [false,'Please enter zip code'],
     },
     gender :{
         type :String,
-        required :[true,'Please enter Gender']
+        default : "Not Specified",
+        required :[false,'Please enter Gender']
     },
     userType :{
         type :String,
-        required :[true,'Please enter user type']
+        required :[false,'Please enter user type']
     },
+    address:{
+        type : String,
+        required : [false,'Please enter address']
+    },  
     isDelete : {
         type : Boolean,
         default : false

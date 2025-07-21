@@ -1,0 +1,4 @@
+# This is a comment explaining the purpose of the .gitignore file
+# This file specifies intentionally untracked files to ignore in the repository     
+# Ignore node_modules directory
+/node_modules 

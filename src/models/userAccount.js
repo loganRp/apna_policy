@@ -1,9 +1,14 @@
 const {conn, mongoose} = require('../middleware/connection')
 // const validator = require('validator')
 var userAccountSchema = mongoose.Schema({
-    acc_name : {
+    account_name : {
         type : String,
         required : [true,'Please enter name']
+    },
+    account_type :{
+        type : String,
+        default: 'Personal',
+        required : [true,'Please enter account type']
     },
     isDelete : {
         type : Boolean,
@@ -14,4 +19,4 @@ var userAccountSchema = mongoose.Schema({
     versionKey: false
   })
 
-exports.UserAccountModel = conn.model('userAccount',userAccountSchema)
+exports.UserAccountModel = conn.model('user_Account',userAccountSchema)

@@ -1,5 +1,5 @@
 const {createImployee,updateImployee, deleteImployee } = require("../services/policyService");
-const {EmployeeModel} = require('../models/agentModel')
+// const {EmployeeModel} = require('../models/agentModel')
 
 exports.createImployee = async(req, res)=>{
     try{

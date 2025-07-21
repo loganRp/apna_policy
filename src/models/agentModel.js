@@ -1,7 +1,7 @@
 const {conn, mongoose} = require('../middleware/connection')
 // const validator = require('validator')
 var agentSchema = mongoose.Schema({
-    name : {
+    agent : {
         type : String,
         required : [true,'Please enter name']
     },

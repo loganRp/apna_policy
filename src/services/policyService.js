@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const {EmployeeModel} = require('../models/agentModel')
+// const {EmployeeModel} = require('../models/agentModel')
 const jwtToken = require('../middleware/auth')
 
 exports.searchPolicyByUsername = async(data)=>{

@@ -14,4 +14,4 @@ var policyCategorySchema = mongoose.Schema({
     versionKey: false
   })
 
-exports.PolicyCategoryModel = conn.model('policyCategory',policyCategorySchema)
+exports.PolicyCategoryModel = conn.model('policy_Category',policyCategorySchema)

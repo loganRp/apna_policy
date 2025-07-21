@@ -12,4 +12,4 @@ const ScheduledMessageSchema = new mongoose.Schema({
   inserted: { type: Boolean, default: false }
 });
 
-exports.ScheduledMessageModel = mongoose.model('ScheduledMessage',ScheduledMessageSchema)
+exports.ScheduledMessageModel = mongoose.model('Scheduled_Message',ScheduledMessageSchema)
