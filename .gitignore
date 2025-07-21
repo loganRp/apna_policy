@@ -2,3 +2,9 @@
 # This file specifies intentionally untracked files to ignore in the repository     
 # Ignore node_modules directory
 /node_modules 
+/package-lock.json
+# Ignore build output directories
+/dist
+/build
+# Ignore log files
+*.log   
